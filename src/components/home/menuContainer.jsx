@@ -47,7 +47,7 @@ const MenuContainer = () => {
           {showExtendedMenu && <p>My Programmas</p>}
         </div>
         </Link>
-        <Link to="profile">
+        <Link to="/profile">
         <div>
           <img src={ProfileIcon} alt="menuicon" />
           {showExtendedMenu && <p>My Account</p>}

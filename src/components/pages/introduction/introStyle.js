@@ -15,7 +15,7 @@ export const MenuComponents = styled.div`
 `;
 export const CoursesIntro = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 48px;
   flex: 4;
   border: 5px solid green;
@@ -25,22 +25,22 @@ export const CoursesIntro = styled.div`
 `;
 export const BigContainer = styled.div`
   display: flex;
+  width: 80vw;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 20px;
 `;
 export const Courseleft = styled.div`
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   flex-direction: column;
-  justify-content: start;
+  /* align-items: start;
+  justify-content: start; */
+
   gap: 20px;
 `;
 export const InformationTable = styled.div`
-/* :hover{
-  display: flex;
-  transform: translateY(-5px) scale(1.03);
-  border: 1px solid #13bbff;
-  transition: all .50s ease;
-} */
   display: flex;
   border-radius: 20px;
   background: var(
@@ -51,17 +51,20 @@ export const InformationTable = styled.div`
       rgba(118, 118, 118, 0) 100%
     )
   );
-  :hover{
-  display: flex;
-  transform: translateY(-5px) scale(1.03);
-  border: 1px solid #13bbff;
-  transition: all .50s ease;
-}
+  
+  p{
+    color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
 `;
 export const LinkButtonWrap = styled.div`
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 100px;
+  
   button {
     z-index: 1;
     border: none;
@@ -77,6 +80,10 @@ export const LinkButtonWrap = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+  button:hover{ 
+  transform: translateY(-10px) scale(1.13);
+  transition: all .50s ease; 
   }
   .garidient-button {
     border-radius: 5px;
@@ -94,6 +101,11 @@ export const DetailWrapper = styled.div`
     --bg-dark-1,
     linear-gradient(120deg, #070a15 7.55%, #2b3042 100%)
   );
+  :hover{
+  display: flex;
+  transform: translateY(-5px) scale(1.03);
+  transition: all .50s ease;
+}
 `;
 export const VidioWrapper = styled.div`
   display: flex;

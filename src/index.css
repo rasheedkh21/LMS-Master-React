@@ -1,13 +1,107 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace, "Montserrat", sans-serif;
+}
+
+.Tab {
+  width: 500px;
+  height: 660px;
+  border-radius: 10px;
+  background: var(--bg-dark-secondary,
+      linear-gradient(180deg,
+        rgba(51, 50, 59, 0.5) 0%,
+        rgba(118, 118, 118, 0) 100%));
+}
+
+.Tapbtn {
+  width: 250px;
+  height: 30px;
+  flex-shrink: 0;
+  border: none;
+  color: var(--color-typo-dark-theme, #c0c0c0);
+  border-radius: 10px 0px 0px 0px;
+}
+
+.modal {
+  font-size: 12px;
+}
+
+.modal>.header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+.modal>.content {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 640px;
+  height: 550px;
+  padding: 20px 30px 0px 48px;
+  border-radius: 20px;
+  background: #11141f;
+}
+
+.modal>.actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.60);
+}
+
+.close {
+  cursor: pointer;
+  background: none;
+  border: none;
+  justify-content: end;
+  width: 50px;
+  padding-bottom: 30px;
+}
+
+label {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.popUp-input {
+  width: 585px;
+  height: 2 0px;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.80);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  padding: 10px;
+
+}
+
+.popUp-miniInput {
+  width: 270px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.80);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  padding: 10px;
+}
+
+.popUp-button {
+  background: var(--bg-solido, linear-gradient(92deg, #00F5FC 0.68%, #3290FF 99.28%));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 250px;
+  height: 60px;
 }

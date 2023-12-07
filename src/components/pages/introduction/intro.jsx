@@ -19,6 +19,7 @@ import img6 from "../../../assets/img6.png";
 import img7 from "../../../assets/img7.png";
 import img8 from "../../../assets/img8.png";
 import { Link } from "react-router-dom";
+import { Fade } from "react-reveal";
 
 const Menu = () => {
   return (
@@ -31,6 +32,7 @@ const Menu = () => {
         <CoursesIntro>
           <BigContainer>
             <Courseleft>
+              <Fade left>
               <InformationTable>
                 <div style={{ display: "flex", position: "relative" }}>
                   <img src={img1} alt="img" />
@@ -68,6 +70,8 @@ const Menu = () => {
                   </LinkButtonWrap>
                 </div>
               </InformationTable>
+              </Fade>
+              <Fade left>
               <InformationTable>
                 <div style={{ display: "flex", position: "relative" }}>
                   <img src={img2} alt="img" />
@@ -105,6 +109,8 @@ const Menu = () => {
                   </LinkButtonWrap>
                 </div>
               </InformationTable>
+              </Fade>
+              <Fade left>
               <InformationTable>
                 <div style={{ display: "flex", position: "relative" }}>
                   <img src={img3} alt="img" />
@@ -142,8 +148,10 @@ const Menu = () => {
                   </LinkButtonWrap>
                 </div>
               </InformationTable>
+              </Fade>
             </Courseleft>
             <Courseleft>
+              <Fade left>
               <InformationTable>
                 <div style={{ display: "flex", position: "relative" }}>
                   <img src={img4} alt="img" />
@@ -181,6 +189,8 @@ const Menu = () => {
                   </LinkButtonWrap>
                 </div>
               </InformationTable>
+              </Fade>
+              <Fade left >
               <InformationTable>
                 <div style={{ display: "flex", position: "relative" }}>
                   <img src={img5} alt="img" />
@@ -218,6 +228,8 @@ const Menu = () => {
                   </LinkButtonWrap>
                 </div>
               </InformationTable>
+              </Fade>
+              <Fade left>
               <InformationTable>
                 <div style={{ display: "flex", position: "relative" }}>
                   <img src={img6} alt="img" />
@@ -255,8 +267,10 @@ const Menu = () => {
                   </LinkButtonWrap>
                 </div>
               </InformationTable>
+              </Fade>
             </Courseleft>
             <Courseleft>
+              <Fade left>
               <InformationTable>
                 <div style={{ display: "flex", position: "relative" }}>
                   <img src={img7} alt="img" />
@@ -294,6 +308,8 @@ const Menu = () => {
                   </LinkButtonWrap>
                 </div>
               </InformationTable>
+              </Fade>
+              <Fade left>
               <InformationTable>
                 <div style={{ display: "flex", position: "relative" }}>
                   <img src={img8} alt="img" />
@@ -331,6 +347,46 @@ const Menu = () => {
                   </LinkButtonWrap>
                 </div>
               </InformationTable>
+              </Fade>
+              <Fade left>
+              <InformationTable>
+                <div style={{ display: "flex", position: "relative" }}>
+                  <img src={img7} alt="img" />
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      padding: 15,
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="208"
+                      height="8"
+                      viewBox="0 0 208 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 4H204"
+                        stroke="#00F5FC"
+                        stroke-width="7"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    <p>
+                      Nombre del curso puede <br />
+                      ser multi líneas.{" "}
+                    </p>
+                    <p>Number 1 Professors</p>
+                  </div>
+                  <LinkButtonWrap>
+                    <Link to="/videolesson">
+                      <button>Course</button>
+                    </Link>
+                  </LinkButtonWrap>
+                </div>
+              </InformationTable>
+              </Fade> 
             </Courseleft>
           </BigContainer>
         </CoursesIntro>
